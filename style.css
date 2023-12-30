@@ -1,0 +1,178 @@
+:root{
+    --primary: #f0f0f0;
+    --secondary: #111111;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+html{
+    font-size: calc(100vw / 1920 * 10);
+}
+
+body{
+    font-family: 'Playfair Display', serif;
+}
+
+h1{
+    font-size: 12rem;
+}
+
+h2{
+    font-size: 12rem;
+}
+
+h3{
+    font-size: 6.4rem;
+}
+
+p,span{
+    font-size: 3.2rem;
+    line-height: 1;
+}
+
+/* lenis css settings*/
+
+html.lenis{
+    height: auto;
+}
+
+.lenis.lenis-smooth{
+    scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth[data-lenis-prevent]{
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped{
+    overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe{
+    pointer-events: none;
+}
+
+.app{
+    position: relative;
+    background-color: var(--primary);
+    color: var(--secondary);
+    overflow: hidden;
+}
+
+/**intro*/
+.intro{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(11, 11, 11, 0.755)0%, var(--secondary)100%);
+}
+
+.intro_one{
+    position: relative;
+    height: 100vh;
+    z-index: 1;
+}
+
+.intro_two{
+    position: relative;
+    height: 100%;
+    z-index: 1;
+}
+
+.intro_card{
+    width: 96rem;
+    height: 100%;
+    margin: 0 auto;
+    background-color: var(--primary);
+    padding: 16rem;
+}
+
+.intro_two .intro_card{
+    height: 200rem;
+}
+
+.intro_card_inner{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18rem;
+    height: inherit;
+    padding: 3.2rem 6.4rem;
+    text-align: center;
+}
+
+.intro_card_caption span{
+    display: block;
+}
+
+.intro_card_description p{
+    text-align: justify;
+}
+
+.intro_one_media {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.intro_media_image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/**----Gallery--*/
+
+.gallery{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.gallery_media{
+    position: absolute;
+}
+
+.gallery_media img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery_media:nth-child(1){
+    left: 4%;
+    top: 4%;
+    width: 16rem;
+    height: 24rem;
+}
+
+.gallery_media:nth-child(2){
+    left: 2%;
+    top: 2%;
+    width: 32rem;
+    height: 48rem;
+}
+.gallery_media:nth-child(3){
+    left: 24%;
+    top: 48%;
+    width: 24rem;
+    height: 48rem;
+}
+.gallery_media:nth-child(4){
+    left: 8%;
+    top: 64%;
+    width: 32rem;
+    height: 48rem;
+}
+.gallery_media:nth-child(5){
+    left: 8%;
+    top: 64%;
+    width: 32rem;
+    height: 48rem;
+}
